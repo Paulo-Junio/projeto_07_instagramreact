@@ -10,18 +10,6 @@ function Logos (props) {
   );
 }
 
-function Icones() {
-  return (
-    <div>
-      <div class="icones">
-        {iconNames.map(names => <ion-icon name= {names}> </ion-icon>)}
-      </div>
-      <div class="icones-mobile">
-        <ion-icon name="paper-plane-outline"></ion-icon>
-      </div>
-    </div>
-  );
-}
 function LogoMobile (props){
   return (
       <div class="logo-mobile">
@@ -38,6 +26,22 @@ function InstagramMobile(props){
   );
 };
 
+function Icones() {
+  return (
+    <div class="icones">
+      {iconNames.map(names => <ion-icon name= {names}> </ion-icon>)}
+    </div>
+);
+}
+
+function IconesMobile(props) {
+  return (
+    <div class="icones-mobile">
+        <ion-icon name={props.name}></ion-icon>
+    </div>
+  );
+}
+
 export default function Navbar() {
   return (
     <div class="navbar">
@@ -49,6 +53,7 @@ export default function Navbar() {
               <input type="text" placeholder="Pesquisar" />
             </div>
             <Icones />
+            <IconesMobile name="paper-plane-outline" />
       </div>
     </div>
   )

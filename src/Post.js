@@ -57,7 +57,7 @@ function Posts(props){
                 <div class="curtidas">
                     <img src={props.seguidorImagem} />
                     <div class="texto">
-                    Curtido por <strong>{props.seguidorDestaque}</strong> e <strong>outras {props.curtidas}pessoas</strong>
+                    Curtido por <strong>{props.seguidorDestaque}</strong> e <strong>outras {props.curtidas} pessoas</strong>
                     </div>
                 </div>
             </div>

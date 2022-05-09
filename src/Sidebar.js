@@ -38,7 +38,7 @@ function Usuario(props){
     );
 }
 
-const renderizarSugestoes = seguidoresSugeridos.map(sugerir => <Sugestoes src={sugerir.imagem} nickname={sugerir.name} razao={sugerir.razao}/>)
+const renderizarSugestoes = seguidoresSugeridos.map(sugerir => <Sugestoes src={sugerir.imagem} nickname={sugerir.nome} razao={sugerir.razao}/>)
 
 function Sugestoes (props) {
     return (
@@ -64,7 +64,7 @@ export default function Sidebar() {
             <div class="sugestoes">
                 <div class="titulo">
                     Sugestões para você
-                    <div>Ver Tudo</div>
+                    <div>Ver tudo</div>
                 </div>
 
                 {renderizarSugestoes}
